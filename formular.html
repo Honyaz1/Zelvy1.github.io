@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/55cbca7e94.js" crossorigin="anonymous"></script>
+    <title>Formulář</title>
+    <link rel="icon" type="image/x-icon" href="obr/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .telo{
+            background-color: white;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 5px;
+            
+        }
+        .nadpis{
+            text-align: center;
+            display: flex;
+            color: black;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+        .linky{
+            display: flex;
+            width: 200px;
+            height: 50px;
+            border: solid 1px white;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .obsah{
+            display: flex;
+            background-color: white;
+            max-height: 1000px;
+            flex-direction: column;
+            font-size: 20px;
+            margin:10px ;
+            text-align: center;
+        }
+        .obsah1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            margin: auto;
+            flex-wrap: wrap;
+            background-color:black;
+        }
+        .telo1{
+            display: flex;
+            margin: 27px;
+
+
+        }
+        .obrazek{
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 30px;
+        }
+       
+        a{
+            color: black;
+        }
+        a:hover {
+            background-color: green;
+            color:yellow;
+        }
+        .konec{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            width: 100%;
+            height: 100px;
+
+        }
+        .end{
+            color: white;
+            
+        
+        }
+        .text_nadpis{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+
+
+            
+        }
+       
+        h1{
+            text-align: center;
+            text-align: center;
+            justify-content: center;
+        }
+        .domecek{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .mapa{
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px;
+        }
+        table, th, td {
+            border-collapse: collapse;
+            margin: auto;
+            align-items: center;
+            border: 1px solid black;
+            padding: 2px;
+
+        }
+        .tabulka{
+            margin: auto;
+            margin: 30px;
+        }
+        .logo{
+            display: flex;
+            margin: auto;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin-left: 75px;
+        }
+        body{
+            margin: 0;
+        }
+        .text{
+            display: flex;
+            font-size: 15px;
+            text-align: left;
+            padding-left: 20px;
+            margin: 10px;
+        }
+        label{
+            padding: 20px;
+        }
+        .odstavec_dotaznik{
+            padding-left: 20px;
+        }
+        ol{
+            padding: 25px;
+        }
+    
+   
+
+        
+
+
+        
+        
+    
+
+
+        
+       
+        
+    </style>
+</head>
+<body>
+    <div class="telo">
+        <div class="nadpis"><h1>Želvy</h1></div>
+    </div>
+    <div class="logo">
+        <img src="obr/Favicon2.png" alt="logo">
+    </div>
+    <hr size="1%">
+    <div class="telo1">
+        
+        <div class="obsah1">
+            <div class="linky">
+                <a href="Menu.html"><i class="fa-solid fa-house" style="color: white;" ></i></a>
+            </div>
+            <div class="linky"><p><a href="zelva_zelenava.html" style="text-decoration: none; color: white;">Želva zelenavá</a></p></div>
+            <div class="linky"><p><a href="zelva_zlutohneda.html" style="text-decoration: none; color: white;">Želva žlutohnědá </a></p> </div>
+            <div class="linky"><p><a href="Dalsi_druhy.html" style="text-decoration: none; color: white;">Další druhy rodu Testudo </a></p> </div>   
+            <div class="linky"><p><a href="evoluce.html" style="text-decoration: none; color: white;">Evoluce</a></p></div>
+            <div class="linky"><p><a href="zajimavosti.html" style="text-decoration: none; color: white;">Zajímavosti</a></p></div>
+
+            
+        </div>
+    </div>
+    <div class="text_nadpis">
+        <h1>Dotazník</h1>
+    </div>
+    <div>
+        <p class="odstavec_dotaznik">Vaše jméno a příjmení:</p>
+        <form action="" >
+            <label for="prvni">Křestní jméno:</label><br>
+            <input type="text" id="Jmeno" name="Jmeno"><br>
+            <label for="druhy">Příjmenmí:</label><br>
+            <input type="text" id="prijmeni" name="prijmeni"><br><br>
+          </form> 
+        <p class="odstavec_dotaznik">Kolik vám je let?</p>
+        <form>
+            <label for="vek">Zadejte ročník narození:</label>
+            <input type="number" id="vek" name="vek" min="1900" max="2023">
+        </form>
+        
+        <p class="odstavec_dotaznik">Měli by jste zájem o želvu?</p>
+        <form action="">
+            <input type="radio" id="Ano" name="Ano" value="Ano">
+            <label for="Ano">Ano</label><br>
+            <input type="radio" id="Ne" name="Ne" value="Ne">
+            <label for="Ne">Ne</label><br>
+           
+        </form> 
+        <p class="odstavec_dotaznik">Pokud ano jaký druh?</p>
+    
+        <form action="">
+            <input type="checkbox" id="zelva" name="zelva">
+            <label for="zelva">Želvu zelenavou</label><br>
+            <input type="checkbox" id="zelva" name="zelva">
+            <label for="zelva">Želvu žlutohnědou</label><br>
+            <input type="checkbox" id="zelva" name="zelva">
+            <label for="druh">Jiný druh</label><br><br>
+        </form> 
+        <p class="odstavec_dotaznik">Pokud jiný druh, tak jaký?</p>
+        <form action="">
+            <label for="druh">Jiný druh:</label><br>
+            <input type="text" id="druh" name="druh">
+        </form>
+
+
+        <form action="">
+            <input type="submit" value="Odevzdat">
+        </form> 
+
+    </div>
+    <div class="telo">
+        <div class="konec">
+            <div class="end">
+                <p style="margin-left: 15px ;">Želvy</p>
+                <p style="margin: 10px;"><i class="fa-solid fa-file" style="color: #8c8c8c; margin-right: 8px;"></i><a style="color: white; text-decoration: none;" href="formular.html">Dotazník</a><a href="" style="text-decoration: none; color: white;"></i></a></p>
+                <p><i class="fa-solid fa-copyright" style="color: #8c8c8c; margin-right: 8px;"></i>Jan Gregor</p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
